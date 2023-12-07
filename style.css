@@ -1,0 +1,19 @@
+.btn {
+  width: 320px;
+  background: blueviolet;
+  color: white;
+  padding: 20px;
+  border: none;
+}
+
+.btn-round {
+  border-radius: 32px;
+}
+
+.btn-wide {
+  width: 420px;
+}
+
+.btn-cta {
+  background: orange;
+}
