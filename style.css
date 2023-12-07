@@ -1,9 +1,66 @@
+/* Site réalisé pas Julie Bourel-Drapier */
+/*commencement 07/12/23 */
+/*objectif : maitrise de sass + entrainement post formation*/
+
+/*general settings*/
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Rock Salt', 'Josefin Sans';
+}
+
+/*Barre de navigation*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.navbar__link {
+  font-family: 'Josefin Sans';
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  color: #f77f00;
+  margin-left: 30px;
+}
+.navbar__link:hover {
+  color: #fcbf49;
+}
+
+
+/*Block boutons divers et variés*/
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 22px;
+}
 .btn {
-  width: 320px;
-  background: blueviolet;
-  color: white;
-  padding: 20px;
+  font-family: 'Josefin Sans';
+  font-size: 17px;
+  width: 200px;
+  background: #003049;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: 20px;
   border: none;
+}
+
+.btn:hover {
+  background: #fcbf49;
+  scale: 1.1;
 }
 
 .btn-round {
@@ -11,9 +68,21 @@
 }
 
 .btn-wide {
-  width: 420px;
+  width: 260px;
 }
 
 .btn-cta {
-  background: orange;
+  background: #f77f00;
 }
+.btn-cta:hover {
+  background: #d62828;
+}
+
+/*Aménagement et organisation du portfolio*/
+.portfolio__article {
+ background-color: #003049;
+ color: #fff;
+ padding: 20px;
+ margin: 20px;
+}
+
