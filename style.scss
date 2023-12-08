@@ -1,0 +1,131 @@
+/* Site onepage mobile first réalisé pas Julie BD */
+/*commencement 07/12/23 */
+/*objectif : maitrise du préprocesseur css -> sass = scss + performance + accessibilité + visibilité réseaux = entrainement post formation*/
+
+
+/*variables sass*/
+/*colors*/
+$main-color: #0f4c5c;
+$second-color: #fb8b24; 
+$third-color: #9a031e;
+$fourth-color: #e36414;
+$fifth-color: #feeafa;
+$white: #f7f7f2;
+$black: #121113;
+
+/*fonts*/
+$main-font: 'Caveat';
+$second-font: 'Rock Salt';
+
+/*general settings*/
+body {
+  font-family: $main-font;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+header {
+  margin: auto;
+  width: 90%;
+}
+footer {
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h2 {
+  font-size: 14px;
+  color: $main-color;
+}
+h3 {
+  font-size: 13px;
+}
+.purpose__title {
+  font-size: 5px;
+}
+
+/*Barre de navigation avec logo et menu*/
+/*sur ce projet il sera intéressant de voir comment réaliser un menu hamburger ou autre*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  .navbar__link {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    color: $main-color;
+    &:hover {
+      color: $second-color;
+      scale: 1.1;
+    }
+  }
+}
+
+.logo {
+  width: 79px;
+  border-radius: 50px;
+  margin: 20px 0 20px 0;
+}
+
+/*Block boutons divers et variés*/
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px;
+}
+.btn {
+  text-align: center;
+  font-family: $main-font;
+  font-size: 12px;
+  width: 50px;
+  background: $main-color;
+  color: $white;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+}
+.btn:hover {
+  background: $second-color;
+  scale: 1.1;
+}
+.btn-round {
+  border-radius: 32px;
+}
+.btn-wide {
+  width: 130px;
+}
+
+.btn-cta {
+  background: $fourth-color;
+}
+.btn-cta:hover {
+  background: $third-color;
+}
+
+/*Aménagement et organisation du portfolio*/
+.portfolio__article {
+  margin: 0;
+  border-radius: 35px;
+  color: $white;
+  padding: 10px;
+}
+.portfolio__img {
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 10px;
+}

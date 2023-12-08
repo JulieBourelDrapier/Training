@@ -1,42 +1,77 @@
-/* Site réalisé pas Julie Bourel-Drapier */
+@charset "UTF-8";
+/* Site onepage mobile first réalisé pas Julie BD */
 /*commencement 07/12/23 */
-/*objectif : maitrise de sass + entrainement post formation*/
-
+/*objectif : maitrise du préprocesseur css -> sass = scss + performance + accessibilité + visibilité réseaux = entrainement post formation*/
+/*variables sass*/
+/*colors*/
+/*fonts*/
 /*general settings*/
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Caveat";
   text-align: center;
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
+
+header {
+  margin: auto;
+  width: 90%;
+}
+
+footer {
+  margin: auto;
+}
+
 a {
   text-decoration: none;
 }
-h1 {
-  font-family: 'Rock Salt', 'Josefin Sans';
+
+ul {
+  list-style-type: none;
 }
 
-/*Barre de navigation*/
+h2 {
+  font-size: 14px;
+  color: #0f4c5c;
+}
+
+h3 {
+  font-size: 13px;
+}
+
+.purpose__title {
+  font-size: 5px;
+}
+
+/*Barre de navigation avec logo et menu*/
+/*sur ce projet il sera intéressant de voir comment réaliser un menu hamburger ou autre*/
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-}
-.navbar__link {
-  font-family: 'Josefin Sans';
-  font-size: 18px;
-  font-weight: bold;
   padding: 10px;
-  text-decoration: none;
-  color: #f77f00;
-  margin-left: 30px;
 }
-.navbar__link:hover {
-  color: #fcbf49;
+.navbar .navbar__link {
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  color: #0f4c5c;
+}
+.navbar .navbar__link:hover {
+  color: #fb8b24;
+  scale: 1.1;
 }
 
+.logo {
+  width: 79px;
+  border-radius: 50px;
+  margin: 20px 0 20px 0;
+}
 
 /*Block boutons divers et variés*/
 .btn-container {
@@ -44,22 +79,23 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 22px;
+  padding: 8px;
 }
+
 .btn {
-  font-family: 'Josefin Sans';
-  font-size: 17px;
-  width: 200px;
-  background: #003049;
-  color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin: 20px;
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 12px;
+  width: 50px;
+  background: #0f4c5c;
+  color: #f7f7f2;
+  padding: 5px;
+  margin: 10px;
   border: none;
 }
 
 .btn:hover {
-  background: #fcbf49;
+  background: #fb8b24;
   scale: 1.1;
 }
 
@@ -68,21 +104,32 @@ h1 {
 }
 
 .btn-wide {
-  width: 260px;
+  width: 130px;
 }
 
 .btn-cta {
-  background: #f77f00;
+  background: #e36414;
 }
+
 .btn-cta:hover {
-  background: #d62828;
+  background: #9a031e;
 }
 
 /*Aménagement et organisation du portfolio*/
 .portfolio__article {
- background-color: #003049;
- color: #fff;
- padding: 20px;
- margin: 20px;
+  margin: 0;
+  border-radius: 35px;
+  color: #f7f7f2;
+  padding: 10px;
+  background: #f7f7f2;
 }
 
+.portfolio__img {
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
